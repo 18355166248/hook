@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { CheckProps } from '../interface'
 
 export default function CheckItem(props: CheckProps) {
   const { checked, id } = props.item
-  console.log(checked, id)
   return (
     <div>
       <div>
