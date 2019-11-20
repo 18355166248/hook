@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import CheckItem from './checkItem'
 import indexStyle from './index.module.scss'
 import { CheckListProps, CheckItemProps } from '../interface'
+import ReduxDemo from '../reduxDemo'
 
 export default function CheckList(props: CheckListProps) {
   const [allCheck, changeAllCheck] = useState(false) // 全选状态
@@ -51,6 +52,7 @@ export default function CheckList(props: CheckListProps) {
           changeChecked={changeChecked}
         />
       ))}
+      <ReduxDemo></ReduxDemo>
     </div>
   )
 }
